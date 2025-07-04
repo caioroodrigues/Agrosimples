@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Sidebar } from './components/Layout/Sidebar';
 import { Navbar } from './components/Layout/Navbar';
 import { Dashboard } from './pages/Dashboard';
@@ -15,7 +15,15 @@ function App() {
     setIsActivityFormOpen(true);
   };
 
-  const handleSaveActivity = (activityData: any) => {
+  interface ActivityData {
+    // Defina os campos conforme necessário, exemplo:
+    title: string;
+    description: string;
+    date: string;
+    // Adicione outros campos conforme o modelo de atividade
+  }
+
+  const handleSaveActivity = (activityData: ActivityData) => {
     // Em uma aplicação real, isso seria enviado para um servidor
     console.log('Nova atividade:', activityData);
     setIsActivityFormOpen(false);

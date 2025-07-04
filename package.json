@@ -29,7 +29,8 @@
     "globals": "^15.9.0",
     "postcss": "^8.4.35",
     "tailwindcss": "^3.4.1",
-    "vite": "^5.4.2"
+    "vite": "^5.4.2",
+    "vite-plugin-gh-pages": "^1.0.1"
   },
   "homepage": "https://caioroodrigues.github.io/Agrosimples"
 }
